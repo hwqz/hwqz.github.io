@@ -407,6 +407,8 @@
 
 				var url = "https://api.telegram.org/bot884032153:AAEXnoILBTGQV-w0pM2eSw4C_3tk7z8Trd0/sendMessage?chat_id=@hwqz_notify&text=" + text
 				$.get(url, function (data, status) {
+					$(".txt-contact").val("");
+					$(".txt-position").val("");
 					alert("提交成功，请您耐心等待");
 				});
 			});
